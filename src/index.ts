@@ -23,5 +23,3 @@ export const nearWalletExists = async (account: string, rpc: NearRPC) => {
   if (response.error) return false;
   return true;
 };
-
-export { walletExists };
