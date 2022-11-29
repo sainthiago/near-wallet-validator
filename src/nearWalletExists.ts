@@ -19,12 +19,12 @@ export const nearWalletExists = async (wallet: string, rpc: NearRPC) => {
   });
 
   try {
-    const response = await walletExists.json()
+    const response = await walletExists.json();
     if (response?.error) {
-      return false
+      return false;
     }
-    return true
+    return true;
   } catch (error) {
-    return false
+    return false;
   }
 };
