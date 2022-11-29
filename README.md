@@ -50,7 +50,7 @@ export default function App() {
 |   Property   |  Type  |    Description    |
 | :---         |     :---      |          :--- |
 | wallet   | string    | Wallet name.    |
-| rpc     | https://rpc.testnet.near.org OR https://rpc.mainnet.near.org      | Testnet or mainnet.  |
+| rpc     | NearRPC    | TESTNET or MAINNET.  |
 
 
 
