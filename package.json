@@ -1,12 +1,19 @@
 {
   "name": "near-wallet-validator",
   "version": "1.0.0",
-  "description": "",
+  "description": "checks if a near wallet exists.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "sainthiago",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sainthiago/near-wallet-validator"
+  },
+  "license": "IMT",
+  "devDependencies": {
+    "typescript": "^4.9.3"
+  }
 }
