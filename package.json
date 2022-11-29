@@ -1,6 +1,6 @@
 {
   "name": "near-wallet-validator",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "checks if a near wallet exists.",
   "main": "lib/src/index.js",
   "types": "lib/src/index.d.ts",
