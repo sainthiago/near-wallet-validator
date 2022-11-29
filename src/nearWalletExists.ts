@@ -25,7 +25,6 @@ export const nearWalletExists = async (wallet: string, rpc: NearRPC) => {
     }
     return true
   } catch (error) {
-    console.error(error)
     return false
   }
 };
