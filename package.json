@@ -2,11 +2,11 @@
   "name": "near-wallet-validator",
   "version": "1.0.0",
   "description": "checks if a near wallet exists.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
-    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.ts\"",
     "lint": "tslint -p tsconfig.json"
   },
   "keywords": [
