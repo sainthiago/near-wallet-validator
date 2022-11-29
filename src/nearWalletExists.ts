@@ -8,7 +8,7 @@ export const nearWalletExists = async (wallet: string, rpc: NearRPC) => {
     },
     body: JSON.stringify({
       jsonrpc: '2.0',
-      id: 'dontcare2',
+      id: 'near-wallet-validator',
       method: 'query',
       params: {
         request_type: 'view_account',
@@ -18,8 +18,14 @@ export const nearWalletExists = async (wallet: string, rpc: NearRPC) => {
     }),
   });
 
-  const response = await walletExists.json();
-
-  if (response.error) return false;
-  return true;
+  try {
+    const response = await walletExists.json()
+    if (response?.error) {
+      return false
+    }
+    return true
+  } catch (error) {
+    console.error(error)
+    return false
+  }
 };
