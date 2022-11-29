@@ -1,6 +1,6 @@
 import { NearRPC } from '../types/index';
 
-export const nearWalletExists = async (account: string, rpc: NearRPC) => {
+export const nearWalletExists = async (wallet: string, rpc: NearRPC) => {
   const walletExists = await fetch(rpc, {
     method: 'POST',
     headers: {
@@ -13,7 +13,7 @@ export const nearWalletExists = async (account: string, rpc: NearRPC) => {
       params: {
         request_type: 'view_account',
         finality: 'final',
-        account_id: account,
+        account_id: wallet,
       },
     }),
   });
