@@ -11,6 +11,39 @@ Checks if a near wallet exists.
 
 ```npm i near-wallet-validator```
 
+## Live Demo
+
+https://codesandbox.io/s/near-wallet-validator-example-3r2lyo
+
+## Example
+
+```javascript
+import "./styles.css";
+import { NearRPC, nearWalletExists } from "near-wallet-validator";
+import { useEffect, useState } from "react";
+
+export default function App() {
+  const [walletExists, setWalletExists] = useState(false);
+  const checkWallet = async () => {
+    const res = await nearWalletExists("1.testnet", NearRPC.TESTNET);
+    setWalletExists(res);
+  };
+
+  useEffect(() => {
+    checkWallet();
+  }, []);
+
+  return (
+    <div className="App">
+      <h1>near-wallet-validator</h1>
+      <p>Does 1.testnet exists in testnet?</p>
+      <span>{walletExists ? "Yes" : "No"}</span>
+    </div>
+  );
+}
+
+```
+
 
 ## API
 
