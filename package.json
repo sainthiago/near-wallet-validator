@@ -27,7 +27,7 @@
     "npm",
     "ts"
   ],
-  "author": "sainthiago",
+  "author": "Rui Santiago",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sainthiago/near-wallet-validator"
