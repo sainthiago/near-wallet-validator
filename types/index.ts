@@ -1,0 +1,1 @@
+export { NearRPC } from "./nearRPC";
